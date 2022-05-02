@@ -17,6 +17,58 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <TextView
+        android:id="@+id/text_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_home" />
+
+    <ToggleButton
+        android:id="@+id/toggleWalking"
+        android:layout_width="145dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="58dp"
+        android:text="ToggleButton"
+        android:textOff="Start walking"
+        android:textOn="Stop walking"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_acc"/>
+
+    <ToggleButton
+        android:id="@+id/toggleStanding"
+        android:layout_width="145dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="80dp"
+        android:text="ToggleButton"
+        android:textOff="Start standing still"
+        android:textOn="Stop standing still"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleWalking" />
+
+    <ToggleButton
+        android:id="@+id/toggleRunning"
+        android:layout_width="145dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="80dp"
+        android:text="ToggleButton"
+        android:textOff="Start running"
+        android:textOn="Stop running"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleStanding" />
 </androidx.constraintlayout.widget.ConstraintLayout>
